@@ -1,6 +1,6 @@
-name: 'ftp-action'
-author: 'Sebastian Popp <ftp-action@sebastianpopp.com>'
-description: 'Automate copying your files via FTP using this GitHub action.'
+name: 'studies-lwftp-testing'
+author: 'Allan <awallan259@gmail.com>'
+description: 'Testing description'
 inputs:
   host:
     description: 'FTP host'
@@ -31,5 +31,5 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
 branding:
-  color: 'blue'
+  color: 'red'
   icon: 'upload-cloud'
