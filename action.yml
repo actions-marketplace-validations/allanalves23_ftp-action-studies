@@ -22,7 +22,7 @@ inputs:
   remoteDir:
     description: 'Remote directory'
     required: false
-    default: '.'
+    default: 'public_html'
   options:
     description: 'Additional mirror command options'
     required: false
