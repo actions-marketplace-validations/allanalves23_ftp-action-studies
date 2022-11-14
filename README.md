@@ -1,8 +1,8 @@
-# ftp-action
+# ftp-action-studies
 
-Automate copying your files via ftp using this GitHub action.
+Automatize o envio de arquivos de FTP do seu site para o seu site lw!
 
-## Example usage
+## Exemplo de uso
 
 ```
 name: Deploy via ftp
@@ -13,25 +13,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Upload ftp
-      uses: sebastianpopp/ftp-action@releases/v2
+
+    - name: studies-lwftp-testing
+      uses: allanalves23/ftp-action-studies@0.0.4
       with:
-        host: ${{ secrets.FTP_SERVER }}
-        user: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
+        host: ${{ secrets.HOST }} 
+        user: ${{ secrets.USER }}
+        password: ${{ secrets.PASS }}
         localDir: "dist"
-        remoteDir: "www"
-        options: "--delete --asci"
 ```
 
-## Input parameters
+## Parâmetros de uso
 
 Input parameter | Description | Required | Default
 --- | --- | --- | ---
-host | FTP server name | Yes | N/A
-user | FTP username | Yes | N/A
-password | FTP password | Yes | N/A
-localDir | The local directory to copy | No | .
-remoteDir | The remote directory to copy to | No | .
-forceSsl | Force SSL encryption | No | false
-options | Mirror command options | No | ''
+host | Servidor FTP | Yes | N/A
+user | Usuário FTP | Yes | N/A
+password | Senha do usuário FTP | Yes | N/A
+localDir | Diretório do projeto a ser copiado a sua hospedagem | No | .
+remoteDir | Diretório da sua hospedagem que irá receber os arquivos copiados | No | "public_html"
+forceSsl | Forçar encryptação SSL | No | false
+options | Options adicionais | No | ''
