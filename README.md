@@ -25,12 +25,12 @@ jobs:
 
 ## Parâmetros de uso
 
-Input parameter | Description | Required | Default
+Parâmetro | Descrição | É requerido? | Padrão
 --- | --- | --- | ---
-host | Servidor FTP | Yes | N/A
-user | Usuário FTP | Yes | N/A
-password | Senha do usuário FTP | Yes | N/A
-localDir | Diretório do projeto a ser copiado a sua hospedagem | No | .
-remoteDir | Diretório da sua hospedagem que irá receber os arquivos copiados | No | "public_html"
-forceSsl | Forçar encryptação SSL | No | false
-options | Options adicionais | No | ''
+host | Servidor FTP | Sim | N/A
+user | Usuário FTP | Sim | N/A
+password | Senha do usuário FTP | Sim | N/A
+localDir | Diretório do projeto a ser copiado a sua hospedagem | Não | .
+remoteDir | Diretório da sua hospedagem que irá receber os arquivos copiados | Não | 'public_html'
+forceSsl | Forçar encryptação SSL | Não | false
+options | Options adicionais | Não | ''
