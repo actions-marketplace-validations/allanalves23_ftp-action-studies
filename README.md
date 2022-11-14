@@ -33,4 +33,4 @@ password | Senha do usuário FTP | Sim | N/A
 localDir | Diretório do projeto a ser copiado a sua hospedagem | Não | .
 remoteDir | Diretório da sua hospedagem que irá receber os arquivos copiados | Não | 'public_html'
 forceSsl | Forçar encryptação SSL | Não | false
-options | Options adicionais | Não | ''
+options | Opções adicionais ao uso do comando [lftp](http://lftp.yar.ru/lftp-man.pdf) | Não | ''
